@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+/*
+  Generated from design/figma/tokens.json (Figma token export, updated master scale).
+  px values converted to rem at a 16px root. Re-run this conversion by hand
+  if the token file gets updated again — there's no auto-sync script yet.
+
+  Layout of this theme:
+    1. Primitive scales   — direct 1:1 from tokens.json (brand-primary-100..900, etc.)
+    2. Semantic aliases   — NOT in tokens.json, inferred by convention (surface-*, text-*, border-*)
+                            so utility classes like `bg-surface-brand` work. Rename freely if your
+                            design system uses different semantic names — these are just CSS vars.
+    3. Flat back-compat   — brand-primary / brand-secondary, kept because existing components
+                            already reference these exact class names.
+*/
+@theme {
+  /* ---- 1. Primitive color scales ---- */
+  --color-brand-primary-100: #e1fceb;
+  --color-brand-primary-300: #a4f6c4;
+  --color-brand-primary-500: #6af0a2;
+  --color-brand-primary-700: #34c873;
+  --color-brand-primary-900: #187642;
+
+  --color-brand-secondary-100: #fff9cc;
+  --color-brand-secondary-300: #fdeb66;
+  --color-brand-secondary-500: #fedf00;
+  --color-brand-secondary-700: #998600;
+  --color-brand-secondary-900: #332c00;
+
+  --color-neutral-black: #0b0b0b;
+  --color-neutral-white: #ffffff;
+  --color-neutral-gray-100: #f2f2f2;
+  --color-neutral-gray-300: #d9d9d9;
+  --color-neutral-gray-500: #a6a6a6;
+  --color-neutral-gray-700: #737373;
+  --color-neutral-gray-900: #404040;
+
+  --color-accent-red-100: #fad7d6;
+  --color-accent-red-300: #f28885;
+  --color-accent-red-500: #e53935;
+  --color-accent-red-700: #a02825;
+  --color-accent-red-900: #5c1715;
+
+  --color-accent-magenta-100: #f7d1df;
+  --color-accent-magenta-300: #ec8db0;
+  --color-accent-magenta-500: #d81b60;
+  --color-accent-magenta-700: #971343;
+  --color-accent-magenta-900: #560b26;
+
+  --color-accent-maroon-100: #e7cfdc;
+  --color-accent-maroon-300: #c17d9e;
+  --color-accent-maroon-500: #880e4f;
+  --color-accent-maroon-700: #5f0a37;
+  --color-accent-maroon-900: #36051f;
+
+  /* ---- 2. Semantic aliases (inferred — adjust names/mappings as your system dictates) ---- */
+  --color-surface-page: var(--color-neutral-white);
+  --color-surface-inverse: var(--color-neutral-black);
+  --color-surface-brand: var(--color-brand-primary-500);
+  --color-surface-brand-subtle: var(--color-brand-primary-100);
+  --color-surface-secondary: var(--color-brand-secondary-500);
+  --color-surface-secondary-subtle: var(--color-brand-secondary-100);
+  --color-surface-danger: var(--color-accent-red-100);
+
+  --color-text-primary: var(--color-neutral-black);
+  --color-text-inverse: var(--color-neutral-white);
+  --color-text-muted: var(--color-neutral-gray-700);
+  --color-text-brand: var(--color-brand-primary-900);
+  --color-text-danger: var(--color-accent-red-700);
+
+  --color-border-default: var(--color-neutral-gray-300);
+  --color-border-strong: var(--color-neutral-gray-500);
+
+  /* ---- 3. Flat back-compat (existing components use these exact names) ---- */
+  --color-brand-primary: var(--color-brand-primary-500);
+  --color-brand-secondary: var(--color-brand-secondary-500);
+
+  /* ---- Typography ---- */
+  --font-heading: "Barlow Semi Condensed", "Barlow", "Helvetica Neue", sans-serif;
+  --font-body: "Barlow", "Helvetica Neue", sans-serif;
+  --font-condensed: "Barlow Condensed", "Barlow", "Helvetica Neue", sans-serif;
+
+  --text-3xs: 0.5rem;
+  --text-2xs: 0.625rem;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  --text-7xl: 4.5rem;
+  --text-8xl: 6rem;
+  --text-9xl: 8rem;
+  --text-10xl: 10.5rem;
+
+  /* ---- Spacing scale (adds p-xs, gap-lg, etc. alongside Tailwind's default numeric scale) ---- */
+  --spacing-none: 0px;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
+  --spacing-3xl: 6rem;
+  --spacing-4xl: 8rem;
+
+  /* ---- Border radius (overrides rounded-sm/md/lg/full) ---- */
+  --radius-none: 0px;
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-full: 9999px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-surface-page text-text-primary font-body antialiased;
+}
+
+/* Scroll-reveal utility — paired with the useReveal hook, no animation library needed */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Marquee banner — pure CSS infinite scroll (see MarqueeBanner.jsx).
+   The track holds two identical halves, so -50% lands exactly one loop later. */
+.marquee {
+  overflow: hidden;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 40s linear infinite;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* Starts at -50% and moves to 0 so the content travels left → right;
+   the two identical track halves make the loop seamless. */
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}

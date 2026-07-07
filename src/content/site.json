@@ -1,0 +1,36 @@
+{
+  "_note": "Placeholder content. Once NOTION_TOKEN + database/page IDs are set in .env, run `npm run notion:fetch` to overwrite this file with real content pulled from Notion at build time. See scripts/fetch-notion-content.mjs.",
+  "brand": {
+    "name": "HOWJ",
+    "tagline": "Placeholder tagline — pull real copy from Canva/Figma design."
+  },
+  "nav": [
+    { "label": "Home", "path": "/" },
+    { "label": "About", "path": "/about" },
+    { "label": "Destinations", "path": "/destinations" },
+    { "label": "Gallery", "path": "/gallery" },
+    { "label": "Register", "path": "/register" },
+    { "label": "Contact", "path": "/contact" }
+  ],
+  "hero": {
+    "heading": "Placeholder headline for the hero section",
+    "subheading": "Placeholder supporting line — replace with real messaging.",
+    "cta": { "label": "Register interest", "path": "/register" }
+  },
+  "about": {
+    "heading": "About HOWJ",
+    "body": "Placeholder about copy. Replace with the real brand story from the Canva/Figma design."
+  },
+  "destinations": {
+    "heading": "Where we go",
+    "items": [
+      { "name": "Placeholder destination 1", "description": "Placeholder description." },
+      { "name": "Placeholder destination 2", "description": "Placeholder description." },
+      { "name": "Placeholder destination 3", "description": "Placeholder description." }
+    ]
+  },
+  "footer": {
+    "email": "hello@howj.example",
+    "social": []
+  }
+}
