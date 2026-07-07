@@ -8,7 +8,9 @@
       "PowerShell(Get-ChildItem \"$env:LOCALAPPDATA\\\\Programs\" -Directory -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Name; Write-Output \"---\"; Test-Path \"node_modules\"; Test-Path \"package.json\")",
       "PowerShell($env:Path -split ';' | Select-Object -First 30; Write-Output \"---winget---\"; \\(Get-Command winget -ErrorAction SilentlyContinue\\).Source)",
       "PowerShell(winget install OpenJS.NodeJS.LTS --accept-source-agreements --accept-package-agreements --silent)",
-      "PowerShell($env:Path = \"$env:LOCALAPPDATA\\\\Programs\\\\nodejs;$env:Path\"; Remove-Item -Recurse -Force node_modules; npm install)"
+      "PowerShell($env:Path = \"$env:LOCALAPPDATA\\\\Programs\\\\nodejs;$env:Path\"; Remove-Item -Recurse -Force node_modules; npm install)",
+      "PowerShell(git fetch origin 2>$null)",
+      "PowerShell(git add -A; git status --short | Select-Object -First 5; Write-Output \"...\"; \\(git status --short | Measure-Object -Line\\).Lines)"
     ]
   }
 }

@@ -21,4 +21,7 @@ dist-ssr
 .idea
 .DS_Store
 *.suo
-*.nt
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
