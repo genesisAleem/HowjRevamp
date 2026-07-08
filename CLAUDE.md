@@ -31,9 +31,11 @@ This site was scaffolded in a prior session (Cowork). Read this before making ch
 
 ## Figma components — hero pulled in, rest pending
 
-The hero section (Figma node `87-5189` in file `Nc7E7NNfdkLjRlxD8eZB4x`) is implemented: `src/components/Hero.jsx` composes `HeroBackground.jsx` (Montego Bay image from `src/assets/hero/`, video-ready — pass `videoSrc` and the image becomes the poster), `BoardingPassCard.jsx` (ticket card with live countdown to 12 Dec 2026), and `MarqueeBanner.jsx` (pure-CSS infinite scroll, keyframes in `index.css`, pauses on hover). `PlaneIcon.jsx` is the brand jet inlined so it tints via `currentColor`; the Jamaica flag and calendar icons are inline SVGs in `BoardingPassCard.jsx`. Fonts (Barlow / Barlow Semi Condensed / Barlow Condensed) are now loaded via Google Fonts in `index.html` — they were declared in the theme but never actually loaded before.
+The hero section (Figma node `87-5189` in file `Nc7E7NNfdkLjRlxD8eZB4x`) is implemented: `src/components/Hero.jsx` composes `HeroBackground.jsx` (Montego Bay image from `src/assets/hero/`; any `.mp4`/`.webm` dropped into `src/assets/hero/videos/` is auto-discovered via `import.meta.glob` and plays as a looping background playlist in filename order, double-buffered for seamless crossfades — the image stays as the no-video fallback), `BoardingPassCard.jsx` (ticket card with live countdown to 12 Dec 2026), and `MarqueeBanner.jsx` (pure-CSS infinite scroll, keyframes in `index.css`, pauses on hover). `PlaneIcon.jsx` is the brand jet inlined so it tints via `currentColor`; the Jamaica flag and calendar icons are inline SVGs in `BoardingPassCard.jsx`. Fonts (Barlow / Barlow Semi Condensed / Barlow Condensed) are now loaded via Google Fonts in `index.html` — they were declared in the theme but never actually loaded before.
 
-Still hand-built (not yet from Figma): Navbar (design has a mint pill-shaped floating nav, node `86-4096`), Footer, everything else. Same workflow: node-specific URL → `get_design_context`.
+The Navbar (node `86-4096`) is implemented: `src/components/Navbar.jsx` is the floating three-segment mint bar (logo | links | Register CTA) on `brand-primary-300`, 130px tall on desktop, with a hamburger dropdown below `lg` per the design's dev note. It uses the real routes from `site.json` nav — the design's placeholder labels (Give, Partner, FAQ) point to pages that don't exist. Logo is `src/assets/brand/howj-logo-grey.svg` (copied from `assets/icons/Howjlogo-grey.svg`).
+
+Still hand-built (not yet from Figma): Footer, everything else. Same workflow: node-specific URL → `get_design_context`.
 
 ## Known non-issue from the prior environment
 

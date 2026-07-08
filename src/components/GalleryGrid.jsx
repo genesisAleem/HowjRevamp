@@ -7,7 +7,7 @@ export default function GalleryGrid() {
       {photos.map((photo, i) => (
         <Reveal key={photo.src} delay={(i % 8) * 60} className="overflow-hidden rounded-lg bg-neutral-black/5">
           <img
-            src={photo.src}
+            src={import.meta.env.BASE_URL + photo.src.replace(/^\//, '')}
             alt={photo.alt}
             loading="lazy"
             className="aspect-square w-full object-cover transition duration-500 hover:scale-105"

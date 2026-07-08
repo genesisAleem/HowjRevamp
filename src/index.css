@@ -6,7 +6,7 @@
   if the token file gets updated again — there's no auto-sync script yet.
 
   Layout of this theme:
-    1. Primitive scales   — direct 1:1 from tokens.json (brand-primary-100..900, etc.)
+    1. Primitive scales   — direct 1:1 from tokens.json (brand-primary-50..950, etc.)
     2. Semantic aliases   — NOT in tokens.json, inferred by convention (surface-*, text-*, border-*)
                             so utility classes like `bg-surface-brand` work. Rename freely if your
                             design system uses different semantic names — these are just CSS vars.
@@ -15,11 +15,17 @@
 */
 @theme {
   /* ---- 1. Primitive color scales ---- */
-  --color-brand-primary-100: #e1fceb;
-  --color-brand-primary-300: #a4f6c4;
-  --color-brand-primary-500: #6af0a2;
-  --color-brand-primary-700: #34c873;
-  --color-brand-primary-900: #187642;
+  --color-brand-primary-50: #ebfcf1;
+  --color-brand-primary-100: #ccf8dc;
+  --color-brand-primary-200: #9df1c1;
+  --color-brand-primary-300: #72f3a8;
+  --color-brand-primary-400: #6af0a2;
+  --color-brand-primary-500: #36e182;
+  --color-brand-primary-600: #16c564;
+  --color-brand-primary-700: #109c50;
+  --color-brand-primary-800: #107b41;
+  --color-brand-primary-900: #0e6537;
+  --color-brand-primary-950: #07381e;
 
   --color-brand-secondary-100: #fff9cc;
   --color-brand-secondary-300: #fdeb66;
@@ -166,6 +172,49 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   .marquee-track {
+    animation: none;
+  }
+}
+
+/* Boarding pass animations (see BoardingPassCard.jsx) */
+
+/* Perforation plane flies in from below on load and settles at its resting spot. */
+@keyframes plane-fly-in {
+  from {
+    transform: translateY(90px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.plane-fly-in {
+  animation: plane-fly-in 1s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Each title phrase fades/rises in as the loop swaps (element re-keys per phrase). */
+@keyframes title-swap-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.4em);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.title-swap-in {
+  animation: title-swap-in 0.45s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .plane-fly-in,
+  .title-swap-in {
     animation: none;
   }
 }

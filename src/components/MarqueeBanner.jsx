@@ -4,13 +4,13 @@ import PlaneIcon from './PlaneIcon.jsx'
 function MarqueeItem({ text }) {
   return (
     <div className="flex items-center gap-xl pr-xl sm:gap-2xl sm:pr-2xl">
-      <p className="whitespace-nowrap font-heading text-2xl font-bold uppercase text-neutral-black sm:text-4xl">
+      <p className="whitespace-nowrap font-heading text-lg font-bold uppercase text-neutral-white sm:text-2xl">
         {text}
       </p>
-      <PlaneIcon className="w-16 shrink-0 text-brand-secondary sm:w-24" />
+      <PlaneIcon className="w-12 shrink-0 text-brand-secondary sm:w-16" />
       <Link
         to="/register"
-        className="flex shrink-0 items-center justify-center rounded-sm bg-brand-secondary px-2xl py-xs font-heading text-2xl text-neutral-black transition hover:brightness-95 sm:px-3xl sm:py-sm sm:text-3xl"
+        className="flex shrink-0 items-center justify-center rounded-sm bg-brand-secondary px-xl py-1 font-heading text-lg text-neutral-black transition hover:brightness-95 sm:px-2xl sm:py-1.5 sm:text-xl"
       >
         REGISTER
       </Link>
@@ -23,7 +23,7 @@ function MarqueeItem({ text }) {
 // half repeats the item enough times to cover ultrawide viewports.
 export default function MarqueeBanner({ text = 'HANGOUT WITH JESUS JAMAICA MONTEGO BAY' }) {
   return (
-    <div className="marquee bg-brand-primary py-xs sm:py-sm">
+    <div className="marquee bg-brand-primary-900 py-xs sm:py-sm">
       <div className="marquee-track">
         {[false, true].map((clone) => (
           <div key={clone ? 'clone' : 'original'} className="flex" aria-hidden={clone || undefined}>

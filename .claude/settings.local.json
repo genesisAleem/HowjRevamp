@@ -8,7 +8,28 @@
       "PowerShell(Get-ChildItem \"$env:LOCALAPPDATA\\\\Programs\" -Directory -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Name; Write-Output \"---\"; Test-Path \"node_modules\"; Test-Path \"package.json\")",
       "PowerShell($env:Path -split ';' | Select-Object -First 30; Write-Output \"---winget---\"; \\(Get-Command winget -ErrorAction SilentlyContinue\\).Source)",
       "PowerShell(winget install OpenJS.NodeJS.LTS --accept-source-agreements --accept-package-agreements --silent)",
-      "PowerShell($env:Path = \"$env:LOCALAPPDATA\\\\Programs\\\\nodejs;$env:Path\"; Remove-Item -Recurse -Force node_modules; npm install)"
+      "PowerShell($env:Path = \"$env:LOCALAPPDATA\\\\Programs\\\\nodejs;$env:Path\"; Remove-Item -Recurse -Force node_modules; npm install)",
+      "Bash(npm --version)",
+      "Read(//opt/homebrew/bin/**)",
+      "Bash(command -v brew nvm fnm volta)",
+      "Read(//Users/olalekan/**)",
+      "Bash(curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh)",
+      "Bash(bash)",
+      "Bash(zsh -ic 'node --version && npm --version')",
+      "Bash(npm install *)",
+      "Bash(python3 -c \"import json; print\\(json.dumps\\(json.load\\(open\\('/Users/olalekan/Documents/Howj Website Revamp/src/content/site.json'\\)\\)['nav'], indent=1\\)\\)\")",
+      "Bash(python3 -)",
+      "Bash(python3 -c ' *)",
+      "Bash(awk '{print $5, $9}')",
+      "Bash(command -v ffprobe)",
+      "Bash(/private/tmp/claude-501/-Users-olalekan-Documents-Howj-Website-Revamp/799d4e45-8c54-4947-bb5a-8affaafe1325/scratchpad/node_modules/ffmpeg-static/ffmpeg -y -i '/Users/olalekan/Documents/Howj Website Revamp/assets/images/hero/HowjHerovideo.mp4' -c:v libx264 -crf 28 -preset medium -an -movflags +faststart '/Users/olalekan/Documents/Howj Website Revamp/src/assets/hero/videos/01-howj-hero.mp4')",
+      "Bash(gh auth *)",
+      "Bash(ssh -o BatchMode=yes -o ConnectTimeout=5 -T git@github.com)",
+      "Bash(git credential *)",
+      "Bash(python3 -c \"import json; g=json.load\\(open\\('src/content/gallery.json'\\)\\); print\\(json.dumps\\(g if isinstance\\(g,list\\) else g, indent=1\\)[:300]\\)\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\('private:', d.get\\('private'\\), '| default_branch:', d.get\\('default_branch'\\), '| pushed_at:', d.get\\('pushed_at'\\), '| size_kb:', d.get\\('size'\\)\\)\")",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
     ]
   }
 }
