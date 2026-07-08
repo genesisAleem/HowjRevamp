@@ -37,6 +37,10 @@ The Navbar (node `86-4096`) is implemented: `src/components/Navbar.jsx` is the f
 
 Still hand-built (not yet from Figma): Footer, everything else. Same workflow: node-specific URL → `get_design_context`.
 
+## Deployment — GitHub Pages (stakeholder preview)
+
+Live preview: **https://genesisaleem.github.io/HowjRevamp/** — served from the `gh-pages` branch (legacy Pages build, source pushed manually). The repo is `genesisAleem/HowjRevamp` (public). To redeploy after changes: `vite build --base=/HowjRevamp/`, copy `dist/index.html` to `dist/404.html` (SPA fallback), commit `dist/` to `gh-pages`, force-push. The stored GitHub PAT (osxkeychain) lacks the `workflow` scope, so **pushes containing `.github/workflows/` files are rejected** — that's why deploys are manual instead of via Actions. `BrowserRouter` gets `basename={import.meta.env.BASE_URL}` and gallery image srcs are prefixed with `BASE_URL` so the subpath works; keep new absolute `/...` asset references BASE_URL-aware. Hostinger remains the production target (root path, so BASE_URL degrades to `/`).
+
 ## Known non-issue from the prior environment
 
 The prior session hit file-corruption issues (null-byte padding) when overwriting pre-existing files through its sandboxed file-mount tooling — worked around by writing files via shell heredoc instead. This was specific to that sandbox's fuse-mount setup and does not apply here; normal file writes are fine.
