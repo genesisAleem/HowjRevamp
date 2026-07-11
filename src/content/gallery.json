@@ -1,138 +1,482 @@
 [
   {
-    "src": "/gallery/4b6823b4-4a05-4cf1-aa19-8378b3462495.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
+    "src": "/gallery/atlanta-ministration-01.jpg",
+    "country": "Atlanta",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Atlanta"
   },
   {
-    "src": "/gallery/8.png",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
+    "src": "/gallery/atlanta-ministration-02.jpg",
+    "country": "Atlanta",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Atlanta"
   },
   {
-    "src": "/gallery/AGS_8838.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
+    "src": "/gallery/atlanta-ministration-03.jpg",
+    "country": "Atlanta",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Atlanta"
   },
   {
-    "src": "/gallery/AGS_8850.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
+    "src": "/gallery/atlanta-ministration-04.jpg",
+    "country": "Atlanta",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Atlanta"
   },
   {
-    "src": "/gallery/AGS_8915.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
+    "src": "/gallery/atlanta-ministration-05.jpg",
+    "country": "Atlanta",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Atlanta"
   },
   {
-    "src": "/gallery/BRIT0020.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
+    "src": "/gallery/atlanta-ministration-06.jpg",
+    "country": "Atlanta",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Atlanta"
   },
   {
-    "src": "/gallery/BRIT9858.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
+    "src": "/gallery/atlanta-ministration-07.jpg",
+    "country": "Atlanta",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Atlanta"
   },
   {
-    "src": "/gallery/BRIT9875.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
+    "src": "/gallery/atlanta-ministration-08.jpg",
+    "country": "Atlanta",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Atlanta"
   },
   {
-    "src": "/gallery/BRIT9919.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
+    "src": "/gallery/atlanta-ministration-09.jpg",
+    "country": "Atlanta",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Atlanta"
   },
   {
-    "src": "/gallery/BRIT9975.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
+    "src": "/gallery/atlanta-ministration-10.jpg",
+    "country": "Atlanta",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Atlanta"
   },
   {
-    "src": "/gallery/CAL06811.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
+    "src": "/gallery/atlanta-ministration-11.jpg",
+    "country": "Atlanta",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Atlanta"
   },
   {
-    "src": "/gallery/CAL06958.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
+    "src": "/gallery/atlanta-ministration-12.jpg",
+    "country": "Atlanta",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Atlanta"
   },
   {
-    "src": "/gallery/Copy of 2A1A0155.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
+    "src": "/gallery/atlanta-ministration-13.jpg",
+    "country": "Atlanta",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Atlanta"
   },
   {
-    "src": "/gallery/Copy of 2A1A0180.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
+    "src": "/gallery/brazil-charity-01.jpg",
+    "country": "Brazil",
+    "category": "charity",
+    "alt": "HOWJ charity event in Brazil"
   },
   {
-    "src": "/gallery/Copy of 2A1A0274.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
+    "src": "/gallery/brazil-charity-02.jpg",
+    "country": "Brazil",
+    "category": "charity",
+    "alt": "HOWJ charity event in Brazil"
   },
   {
-    "src": "/gallery/DSC05229.ARW.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
+    "src": "/gallery/brazil-charity-03.jpg",
+    "country": "Brazil",
+    "category": "charity",
+    "alt": "HOWJ charity event in Brazil"
   },
   {
-    "src": "/gallery/HOWJ Kenya - 338.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
+    "src": "/gallery/brazil-ministration-01.jpg",
+    "country": "Brazil",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Brazil"
   },
   {
-    "src": "/gallery/IMG_0156.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
+    "src": "/gallery/brazil-ministration-02.jpg",
+    "country": "Brazil",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Brazil"
   },
   {
-    "src": "/gallery/IMG_2232.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
+    "src": "/gallery/brazil-ministration-03.jpg",
+    "country": "Brazil",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Brazil"
   },
   {
-    "src": "/gallery/IMG_5647.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
+    "src": "/gallery/brazil-ministration-04.jpg",
+    "country": "Brazil",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Brazil"
   },
   {
-    "src": "/gallery/IMG_5652.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
+    "src": "/gallery/brazil-ministration-05.jpg",
+    "country": "Brazil",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Brazil"
   },
   {
-    "src": "/gallery/IMG_5893.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
+    "src": "/gallery/brazil-ministration-06.jpg",
+    "country": "Brazil",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Brazil"
   },
   {
-    "src": "/gallery/IMG_7018.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
+    "src": "/gallery/brazil-ministration-07.jpg",
+    "country": "Brazil",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Brazil"
   },
   {
-    "src": "/gallery/IMG_7036.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
+    "src": "/gallery/brazil-ministration-08.jpg",
+    "country": "Brazil",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Brazil"
   },
   {
-    "src": "/gallery/IMG_7299.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
+    "src": "/gallery/brazil-ministration-09.jpg",
+    "country": "Brazil",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Brazil"
   },
   {
-    "src": "/gallery/IMG_7303.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
+    "src": "/gallery/brazil-ministration-10.jpg",
+    "country": "Brazil",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Brazil"
   },
   {
-    "src": "/gallery/IMG_7318.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
+    "src": "/gallery/brazil-ministration-11.jpg",
+    "country": "Brazil",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Brazil"
   },
   {
-    "src": "/gallery/IMG_7363.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
+    "src": "/gallery/brazil-ministration-12.jpg",
+    "country": "Brazil",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Brazil"
+  },
+  {
+    "src": "/gallery/brazil-ministration-13.jpg",
+    "country": "Brazil",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Brazil"
+  },
+  {
+    "src": "/gallery/brazil-ministration-14.jpg",
+    "country": "Brazil",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Brazil"
+  },
+  {
+    "src": "/gallery/brazil-ministration-15.jpg",
+    "country": "Brazil",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Brazil"
+  },
+  {
+    "src": "/gallery/brazil-ministration-16.jpg",
+    "country": "Brazil",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Brazil"
+  },
+  {
+    "src": "/gallery/brazil-ministration-17.jpg",
+    "country": "Brazil",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Brazil"
+  },
+  {
+    "src": "/gallery/brazil-ministration-18.jpg",
+    "country": "Brazil",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Brazil"
+  },
+  {
+    "src": "/gallery/brazil-ministration-19.jpg",
+    "country": "Brazil",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Brazil"
+  },
+  {
+    "src": "/gallery/brazil-ministration-20.jpg",
+    "country": "Brazil",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Brazil"
+  },
+  {
+    "src": "/gallery/brazil-ministration-21.jpg",
+    "country": "Brazil",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Brazil"
+  },
+  {
+    "src": "/gallery/brazil-ministration-22.jpg",
+    "country": "Brazil",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Brazil"
+  },
+  {
+    "src": "/gallery/brazil-ministration-23.jpg",
+    "country": "Brazil",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Brazil"
+  },
+  {
+    "src": "/gallery/brazil-ministration-24.jpg",
+    "country": "Brazil",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Brazil"
+  },
+  {
+    "src": "/gallery/brazil-ministration-25.jpg",
+    "country": "Brazil",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Brazil"
+  },
+  {
+    "src": "/gallery/brazil-ministration-26.jpg",
+    "country": "Brazil",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Brazil"
+  },
+  {
+    "src": "/gallery/brazil-ministration-27.jpg",
+    "country": "Brazil",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Brazil"
+  },
+  {
+    "src": "/gallery/ghana-charity-01.jpg",
+    "country": "Ghana",
+    "category": "charity",
+    "alt": "HOWJ charity event in Ghana"
+  },
+  {
+    "src": "/gallery/ghana-charity-02.jpg",
+    "country": "Ghana",
+    "category": "charity",
+    "alt": "HOWJ charity event in Ghana"
+  },
+  {
+    "src": "/gallery/ghana-charity-04.jpg",
+    "country": "Ghana",
+    "category": "charity",
+    "alt": "HOWJ charity event in Ghana"
+  },
+  {
+    "src": "/gallery/ghana-charity-05.jpg",
+    "country": "Ghana",
+    "category": "charity",
+    "alt": "HOWJ charity event in Ghana"
+  },
+  {
+    "src": "/gallery/ghana-charity-06.jpg",
+    "country": "Ghana",
+    "category": "charity",
+    "alt": "HOWJ charity event in Ghana"
+  },
+  {
+    "src": "/gallery/ghana-charity-07.jpg",
+    "country": "Ghana",
+    "category": "charity",
+    "alt": "HOWJ charity event in Ghana"
+  },
+  {
+    "src": "/gallery/ghana-charity-08.jpg",
+    "country": "Ghana",
+    "category": "charity",
+    "alt": "HOWJ charity event in Ghana"
+  },
+  {
+    "src": "/gallery/ghana-outreach-01.jpg",
+    "country": "Ghana",
+    "category": "outreach",
+    "alt": "HOWJ outreach in Ghana"
+  },
+  {
+    "src": "/gallery/India-charity-01.jpg",
+    "country": "India",
+    "category": "charity",
+    "alt": "HOWJ charity event in India"
+  },
+  {
+    "src": "/gallery/India-charity-02.jpg",
+    "country": "India",
+    "category": "charity",
+    "alt": "HOWJ charity event in India"
+  },
+  {
+    "src": "/gallery/India-charity-03.jpg",
+    "country": "India",
+    "category": "charity",
+    "alt": "HOWJ charity event in India"
+  },
+  {
+    "src": "/gallery/India-charity-04.jpg",
+    "country": "India",
+    "category": "charity",
+    "alt": "HOWJ charity event in India"
+  },
+  {
+    "src": "/gallery/India-charity-05.jpg",
+    "country": "India",
+    "category": "charity",
+    "alt": "HOWJ charity event in India"
+  },
+  {
+    "src": "/gallery/kenya-arrival-01.png",
+    "country": "Kenya",
+    "category": "arrival",
+    "alt": "HOWJ arrival in Kenya"
+  },
+  {
+    "src": "/gallery/kenya-arrival-02.jpg",
+    "country": "Kenya",
+    "category": "arrival",
+    "alt": "HOWJ arrival in Kenya"
+  },
+  {
+    "src": "/gallery/kenya-arrival-03.jpg",
+    "country": "Kenya",
+    "category": "arrival",
+    "alt": "HOWJ arrival in Kenya"
+  },
+  {
+    "src": "/gallery/kenya-arrival-04.jpg",
+    "country": "Kenya",
+    "category": "arrival",
+    "alt": "HOWJ arrival in Kenya"
+  },
+  {
+    "src": "/gallery/kenya-ministration-05.jpg",
+    "country": "Kenya",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Kenya"
+  },
+  {
+    "src": "/gallery/korea-outreach-01.jpg",
+    "country": "Korea",
+    "category": "outreach",
+    "alt": "HOWJ outreach in Korea"
+  },
+  {
+    "src": "/gallery/korea-Outreach-02.jpg",
+    "country": "Korea",
+    "category": "Outreach",
+    "alt": "HOWJ Outreach in Korea"
+  },
+  {
+    "src": "/gallery/london-ministration-01.jpg",
+    "country": "London",
+    "category": "ministration",
+    "alt": "HOWJ ministration in London"
+  },
+  {
+    "src": "/gallery/london-ministration-02.jpg",
+    "country": "London",
+    "category": "ministration",
+    "alt": "HOWJ ministration in London"
+  },
+  {
+    "src": "/gallery/london-ministration-03.jpg",
+    "country": "London",
+    "category": "ministration",
+    "alt": "HOWJ ministration in London"
+  },
+  {
+    "src": "/gallery/london-ministration-04.jpg",
+    "country": "London",
+    "category": "ministration",
+    "alt": "HOWJ ministration in London"
+  },
+  {
+    "src": "/gallery/london-ministration-05.jpg",
+    "country": "London",
+    "category": "ministration",
+    "alt": "HOWJ ministration in London"
+  },
+  {
+    "src": "/gallery/london-ministration-06.jpg",
+    "country": "London",
+    "category": "ministration",
+    "alt": "HOWJ ministration in London"
+  },
+  {
+    "src": "/gallery/london-ministration-07.jpg",
+    "country": "London",
+    "category": "ministration",
+    "alt": "HOWJ ministration in London"
+  },
+  {
+    "src": "/gallery/london-ministration-08.jpg",
+    "country": "London",
+    "category": "ministration",
+    "alt": "HOWJ ministration in London"
+  },
+  {
+    "src": "/gallery/london-ministration-09.jpg",
+    "country": "London",
+    "category": "ministration",
+    "alt": "HOWJ ministration in London"
+  },
+  {
+    "src": "/gallery/newyork-charity-04.jpg",
+    "country": "Newyork",
+    "category": "charity",
+    "alt": "HOWJ charity event in Newyork"
+  },
+  {
+    "src": "/gallery/newyork-ministration-01.jpg",
+    "country": "Newyork",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Newyork"
+  },
+  {
+    "src": "/gallery/newyork-ministration-02.jpg",
+    "country": "Newyork",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Newyork"
+  },
+  {
+    "src": "/gallery/newyork-ministration-03.jpg",
+    "country": "Newyork",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Newyork"
+  },
+  {
+    "src": "/gallery/newyork-ministration-04.jpg",
+    "country": "Newyork",
+    "category": "ministration",
+    "alt": "HOWJ ministration in Newyork"
+  },
+  {
+    "src": "/gallery/newyork-outreach-02.jpg",
+    "country": "Newyork",
+    "category": "outreach",
+    "alt": "HOWJ outreach in Newyork"
   },
   {
     "src": "/gallery/IMG_7373.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
+    "country": null,
+    "category": null,
+    "alt": "HOWJ — untagged photo (rename to country-category-##.jpg)"
   },
   {
     "src": "/gallery/IMG_7422.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
-  },
-  {
-    "src": "/gallery/IMG_7558.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
-  },
-  {
-    "src": "/gallery/IMG_9280.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
-  },
-  {
-    "src": "/gallery/IMG_9316.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
-  },
-  {
-    "src": "/gallery/IMG_9345.jpg",
-    "alt": "HOWJ — placeholder alt text, describe this photo"
+    "country": null,
+    "category": null,
+    "alt": "HOWJ — untagged photo (rename to country-category-##.jpg)"
   }
 ]

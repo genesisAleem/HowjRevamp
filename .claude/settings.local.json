@@ -29,7 +29,31 @@
       "Bash(python3 -c \"import json; g=json.load\\(open\\('src/content/gallery.json'\\)\\); print\\(json.dumps\\(g if isinstance\\(g,list\\) else g, indent=1\\)[:300]\\)\")",
       "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\('private:', d.get\\('private'\\), '| default_branch:', d.get\\('default_branch'\\), '| pushed_at:', d.get\\('pushed_at'\\), '| size_kb:', d.get\\('size'\\)\\)\")",
       "Bash(git add *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(git fetch *)",
+      "Bash(git merge origin/main -s ours -m 'Merge remote hero-section commit \\(content already present in local tree\\) *)",
+      "Bash(git reset *)",
+      "Bash(git rm *)",
+      "Bash(rm -rf .github)",
+      "Bash(git merge origin/main -s ours -q -m 'Merge remote hero-section commit \\(content already present in local tree\\) *)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\({k: d.get\\(k\\) for k in ['status','error','created_at','duration']}\\)\")",
+      "Bash(curl -s https://genesisaleem.github.io/HowjRevamp/)",
+      "Bash(curl -s -o /dev/null -w 'video: %{http_code}, %{size_download} bytes\\\\n' -r 0-1000 \"https://genesisaleem.github.io/HowjRevamp/assets/01-howj-hero-lF80vpBM.mp4\")",
+      "Bash(curl -s -o /dev/null -w 'gallery deep link: %{http_code}\\\\n' https://genesisaleem.github.io/HowjRevamp/gallery)",
+      "Bash(git commit -q -m 'Document GitHub Pages deploy in CLAUDE.md *)",
+      "Bash(rm public/gallery/ghana-ministration-01.jpg public/gallery/south-korea-charity-02.jpg)",
+      "Bash(git checkout *)",
+      "Bash(ls -1 public/ministers/)",
+      "Bash(ls -1 src/assets/ministers/)",
+      "Bash(find . -type d -iname '*minister*' -not -path './node_modules/*')",
+      "Bash(ls -la src/content/ministers.json)",
+      "Bash(mv \"Chevelle Franklyn -jamaica.png\" chevelle-franklyn-jamaica.png)",
+      "Bash(mv \"Davidfrolu-cameroon.avif\" davidfrolu-cameroon.avif)",
+      "Bash(mv \"IsraelSalazar-brazil.jpg\" israel-salazar-brazil.jpg)",
+      "Bash(mv \"MOG-ghana.webp\" mog-ghana.webp)",
+      "Bash(mv \"Nosa-nigeria.jpg\" nosa-nigeria.jpg)",
+      "Bash(git commit -q -m ' *)"
     ]
   }
 }

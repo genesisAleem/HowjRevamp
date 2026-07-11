@@ -218,3 +218,59 @@ body {
     animation: none;
   }
 }
+
+/* Vertical minister marquee (see MinistersSection.jsx) — continuous bottom-to-top
+   scroll. Each track duplicates its cards, so translateY(-50%) lands exactly one
+   full set later for a seamless loop. Cards carry their own bottom margin (not a
+   flex gap) so both halves are identical height and the -50% is exact. */
+@keyframes minister-scroll {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+.minister-col {
+  animation: minister-scroll linear infinite;
+  will-change: transform;
+}
+
+.minister-marquee:hover .minister-col {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .minister-col {
+    animation: none;
+  }
+}
+
+/* Gentle vertical bob for the floating MissionSection cards. */
+@keyframes float-y {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+.float-y {
+  animation: float-y 6s ease-in-out infinite;
+}
+
+.float-y-slow {
+  animation: float-y 8.5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .float-y,
+  .float-y-slow {
+    animation: none;
+  }
+}
