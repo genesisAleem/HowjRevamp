@@ -57,14 +57,14 @@ export default function MissionSection() {
         <div className="relative z-10 mx-auto max-w-7xl px-6 py-2xl lg:min-h-[46rem] lg:py-3xl">
           {/* intro + divider */}
           <Reveal className="max-w-[34rem]">
-            <p className="text-2xl text-neutral-black sm:text-3xl">Our mission is to ensure that</p>
+            <p className="text-2xl text-neutral-black sm:text-3xl">Our mission is to see</p>
             <div className="mt-5 h-px w-full bg-neutral-black/25" />
           </Reveal>
 
           {/* split-text headline */}
-          <h2 className="mt-2xl max-w-[46rem] font-heading text-6xl font-bold leading-[1.02] text-neutral-black sm:text-7xl lg:text-8xl">
+          <h2 className="mt-2xl max-w-[46rem] font-heading text-6xl font-bold leading-[1.02] text-neutral-black sm:text-7xl lg:max-w-none lg:text-8xl">
             {lines.map((line, li) => (
-              <span key={li} className="block">
+              <span key={li} className="block lg:whitespace-nowrap">
                 {line.map(({ t, c }) => {
                   const delay = word++ * 90
                   return (
@@ -85,7 +85,7 @@ export default function MissionSection() {
 
           {/* floating destination cards — stacked on mobile, absolute on lg+ */}
           <div className="mt-2xl flex flex-col items-center gap-10 lg:mt-0 lg:block">
-            <div className="float-y w-[12rem] lg:absolute lg:right-0 lg:top-8">
+            <div className="float-y w-[9.5rem] lg:absolute lg:right-0 lg:top-8">
               <CountryCard
                 compact
                 accent="#d81b60"
@@ -96,7 +96,7 @@ export default function MissionSection() {
                 image={`${base}gallery/korea-outreach-01.jpg`}
               />
             </div>
-            <div className="float-y-slow w-[12rem] lg:absolute lg:bottom-10 lg:right-24">
+            <div className="float-y-slow w-[9.5rem] lg:absolute lg:bottom-10 lg:right-24">
               <CountryCard
                 compact
                 accent="#880e4f"

@@ -35,14 +35,14 @@ const SIZES = {
     title: 'text-5xl',
     plane: 'w-28 sm:w-32',
   },
-  // 20% smaller than the earlier compact size (used by the floating MissionSection cards)
+  // Small floating MissionSection cards — scaled down a further 20%.
   compact: {
-    card: 'max-w-[12rem]',
-    flag: 'size-7 right-2 top-2',
-    stub: 'gap-1.5 px-2.5 py-2.5',
-    church: 'text-[0.56rem]',
-    title: 'text-[1.2rem]',
-    plane: 'w-11',
+    card: 'max-w-[9.5rem]',
+    flag: 'size-[1.4rem] right-1.5 top-1.5',
+    stub: 'gap-1 px-2 py-2',
+    church: 'text-[0.45rem]',
+    title: 'text-[0.95rem]',
+    plane: 'w-9',
   },
 }
 

@@ -53,7 +53,12 @@
       "Bash(mv \"IsraelSalazar-brazil.jpg\" israel-salazar-brazil.jpg)",
       "Bash(mv \"MOG-ghana.webp\" mog-ghana.webp)",
       "Bash(mv \"Nosa-nigeria.jpg\" nosa-nigeria.jpg)",
-      "Bash(git commit -q -m ' *)"
+      "Bash(git commit -q -m ' *)",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('src/content/site.json'\\)\\); print\\('keys:', list\\(d.keys\\(\\)\\)\\); print\\('footer:', json.dumps\\(d.get\\('footer'\\), indent=1\\)[:400]\\)\")",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/067cd6fd-7ca7-4bf5-9658-0f078f25adac\" -o /tmp/howj-curve-asset -w 'HTTP %{http_code}, type: %{content_type}, size: %{size_download} bytes\\\\n')",
+      "Read(//tmp/**)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/9e8faf45-508a-4ffc-90b8-dda2fe6d52ff\" -o /tmp/curve-v2.svg -w 'vector: %{content_type} %{size_download}b\\\\n')",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/1d204059-356e-41e6-9106-42de43f74230\" -o /tmp/start-dot.svg -w 'start: %{content_type} %{size_download}b\\\\n')"
     ]
   }
 }

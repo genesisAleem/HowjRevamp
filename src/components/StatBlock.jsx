@@ -18,7 +18,7 @@ function parseNumber(str) {
 // Atom for the StatsSection figures: optional pre-label, massive number, wrapping
 // label. The number counts up from zero (GSAP tween) the first time it scrolls
 // into view. All text renders in text-inverse (white).
-export default function StatBlock({ preLabel, number, label }) {
+export default function StatBlock({ preLabel, number, label, center = false }) {
   const parsed = parseNumber(number)
   const ref = useRef(null)
   const [display, setDisplay] = useState(
@@ -65,14 +65,19 @@ export default function StatBlock({ preLabel, number, label }) {
   }, [number])
 
   return (
-    <div className="flex flex-col gap-xs text-text-inverse">
-      {preLabel && <p className="text-sm text-text-inverse/70">{preLabel}</p>}
+    <div
+      className={`flex flex-col items-center gap-xs text-center text-text-inverse ${
+        center ? 'lg:items-center lg:text-center' : 'lg:items-start lg:text-left'
+      }`}
+    >
+      {preLabel && <p className="text-lg text-text-inverse/70">{preLabel}</p>}
       {/* leading-[1] not leading-none: --spacing-none shadows it to line-height 0.
-          tabular-nums keeps the width steady so the count-up doesn't jitter. */}
-      <p ref={ref} className="font-heading text-7xl font-bold leading-[1] tabular-nums sm:text-8xl">
+          tabular-nums keeps the width steady so the count-up doesn't jitter.
+          8xl (96px) on desktop per Figma. */}
+      <p ref={ref} className="font-heading text-6xl font-bold leading-[1] tabular-nums lg:text-8xl">
         {display}
       </p>
-      <p className="max-w-[14rem] text-lg leading-snug">{label}</p>
+      <p className="max-w-[13rem] text-base leading-snug">{label}</p>
     </div>
   )
 }

@@ -248,6 +248,77 @@ body {
   }
 }
 
+/* CountryShowcase — the focused center card's contents fade/rise in on each
+   slide change (element is re-keyed per active slide). */
+@keyframes card-swap-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-swap-in {
+  animation: card-swap-in 0.5s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-swap-in {
+    animation: none;
+  }
+}
+
+/* StatsSection orbit curves — dotted flight-path lines that "draw on" from start
+   to finish. The dotted look lives on the visible stroke; the draw-on is a thick
+   white mask stroke whose dashoffset animates 1→0 (pathLength=1 normalises it),
+   progressively revealing the dots. Starts when .play is added (on scroll-in). */
+.orbit .orbit-draw {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+}
+
+.orbit.play .orbit-draw {
+  animation: orbit-draw 1.2s ease forwards var(--d, 0s);
+}
+
+@keyframes orbit-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Start-dot markers and the plane fade in on their own delay (--d), so they
+   appear in step with each curve and the plane lands last. */
+.orbit .orbit-fade {
+  opacity: 0;
+}
+
+.orbit.play .orbit-fade {
+  animation: orbit-fade 0.45s ease forwards var(--d, 0s);
+}
+
+@keyframes orbit-fade {
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .orbit .orbit-draw {
+    stroke-dashoffset: 0;
+    animation: none;
+  }
+
+  .orbit .orbit-fade {
+    opacity: 1;
+    animation: none;
+  }
+}
+
 /* Gentle vertical bob for the floating MissionSection cards. */
 @keyframes float-y {
   0%,
