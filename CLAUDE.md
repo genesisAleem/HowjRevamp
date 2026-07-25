@@ -23,6 +23,41 @@ This site was scaffolded in a prior session (Cowork). Read this before making ch
 
 **Open question, unresolved:** `brand.secondary` changed from deep green (`#008236`) to yellow/gold (`#FEDF00`) between token file versions. Existing components (Navbar active link, Register button, Hero CTA area, form focus states) all use `bg-brand-secondary`/`text-brand-secondary` and are now rendering yellow. Not confirmed with the user whether that's intentional or whether those spots should move to a different token (e.g. `text-brand` at the darker `-900` shade for readability). Check before doing more styling work on top of it.
 
+## Notion — Expression/destination template (schema built, fetch script NOT written yet)
+
+The `/expression` template (`src/pages/Expression.jsx` + `src/components/expression/*`) currently renders from a **mock** at `src/content/expressionMock.js`. That mock's shape is the contract — the Notion schema below was built to fill it.
+
+**Workspace:** `olalekan aleem's` (`30b22766-9e5a-817e-b6f3-000348fcdf2e`). Both DBs live under the **Getting Started** page (`296227669e5a805781c8cb0ac70952f9`).
+
+- **`HOWJ Global`** — one row per expression. Database `38122766-9e5a-8070-9529-dc983312f28f`, data source `38122766-9e5a-807e-be49-000be051f589`.
+- **`HOWJ Ministers`** — guest ministers. Database `08933c065e38462bbebb5dbbac06bc03`, data source `d1750d4b-eb9c-468d-a873-2e403dc5b891`. Two-way relation: `Expression` ⇄ `Guest Ministers`.
+
+Field → mock mapping (properties carry Notion descriptions explaining each):
+
+| Notion (HOWJ Global) | mock field | notes |
+|---|---|---|
+| Slug | `slug` | required, lowercase → `/expression/<slug>` |
+| Published | — | only checked rows get built |
+| **Description** (pre-existing) | `overview` | reuse this, don't add another |
+| City / Venue / Event Date | `city` / `venue` / `date` | hero meta row |
+| Sections (multi-select) | `tags` | hero timeline nav; options match section ids: Revival, Documentary, Minister, Charity, Gallery |
+| Logo / Hero Image | `logo` / `heroImage` | |
+| Theme / Bible Verse | `theme` / `verse` | |
+| Souls Impacted + Feature Image 1 | `featureStats[0]` | labels are static in code, only values come from Notion |
+| In Attendance + Feature Image 2 | `featureStats[1]` | |
+| Miracles Documented / Charity Impacted / Souls Through Charity | `numbers[0..2]` | rendered with a `+` suffix appended in code |
+| Documentary Image / Documentary URL | `documentary` | |
+| Charity Title / Charity Overview / Charity Images | `charity` | |
+| Charity Highlight Images | `charityHighlight.images` | title is static |
+| Partners Label / Partner Logos | `partners` | |
+| Guest Ministers (relation) | `ministers` | from HOWJ Ministers (Name, Photo, Role, Order) |
+
+Pre-existing `Country`, `Event Type`, `Year`, `Images` were left untouched (they predate the template).
+
+**Fetch pipeline (built):** `scripts/fetch-expressions.mjs` (wired into `prebuild`) queries both DBs, downloads Notion file URLs into `public/expressions/<slug>/` and rewrites paths (Notion URLs are signed + expire — never hot-link), and writes `src/content/expressions.json` (keyed by slug, committed like `site.json`/`gallery.json`). `Expression.jsx` reads it via `useParams().slug`, falling back to `expressionMock` when the slug is absent or Notion wasn't fetched. The script **no-ops without `NOTION_TOKEN`**, so builds always succeed. It skips rows without a real `Slug` (or slug `x`) and only builds `Published` rows.
+
+**To go live (user actions):** create a Notion internal integration, share **both** `HOWJ Global` and `HOWJ Ministers` with it, put its token in `.env` as `NOTION_TOKEN`, then `npm run build`. Data caveats seen on the Brazil row: Slug was `x` (must be real), Published unchecked, Partners Label empty, Documentary Image held a video URL not an image (script falls back to hero), Charity Highlight Images empty (that carousel hides). Script strips `*markdown*` and `<br>` from text fields.
+
 ## Content state — still placeholder
 
 `src/content/site.json` has placeholder copy everywhere (`content/copy/` source folder is empty — real copy was never written). Don't treat any hero/about/destinations text as final.

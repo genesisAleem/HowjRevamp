@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "vite",
     "notion:fetch": "node scripts/fetch-notion-content.mjs",
+    "expressions:fetch": "node scripts/fetch-expressions.mjs",
     "gallery:sync": "node scripts/sync-gallery.mjs",
-    "prebuild": "npm run notion:fetch && npm run gallery:sync",
+    "prebuild": "npm run notion:fetch && npm run expressions:fetch && npm run gallery:sync",
     "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview"

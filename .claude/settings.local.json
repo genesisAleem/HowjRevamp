@@ -58,7 +58,28 @@
       "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/067cd6fd-7ca7-4bf5-9658-0f078f25adac\" -o /tmp/howj-curve-asset -w 'HTTP %{http_code}, type: %{content_type}, size: %{size_download} bytes\\\\n')",
       "Read(//tmp/**)",
       "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/9e8faf45-508a-4ffc-90b8-dda2fe6d52ff\" -o /tmp/curve-v2.svg -w 'vector: %{content_type} %{size_download}b\\\\n')",
-      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/1d204059-356e-41e6-9106-42de43f74230\" -o /tmp/start-dot.svg -w 'start: %{content_type} %{size_download}b\\\\n')"
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/1d204059-356e-41e6-9106-42de43f74230\" -o /tmp/start-dot.svg -w 'start: %{content_type} %{size_download}b\\\\n')",
+      "mcp__a0893bb1-403b-4237-b450-09d1b25a5c17__get_screenshot",
+      "Bash(curl -sL -o ministers-design.png \"https://www.figma.com/api/mcp/asset/25c63df8-835d-4cff-a844-78ccfbc96d24\")",
+      "Bash(curl -sL -o partners-design.png \"https://www.figma.com/api/mcp/asset/9a59fe08-1479-4851-9b6c-b46dde51a70c\")",
+      "Bash(grep -vE 'key=\\\\{i\\\\}|key=\\\\{`|key=\\\\{[a-zA-Z]+\\\\.\\(target|src|path|slug|label|name|id\\)\\\\}')",
+      "mcp__025b877d-b332-4214-b7fc-6d6a5fe6d6f3__notion-fetch",
+      "mcp__025b877d-b332-4214-b7fc-6d6a5fe6d6f3__notion-search",
+      "mcp__025b877d-b332-4214-b7fc-6d6a5fe6d6f3__notion-create-database",
+      "mcp__025b877d-b332-4214-b7fc-6d6a5fe6d6f3__notion-update-data-source",
+      "Bash(command -v ffmpeg sips magick convert cwebp)",
+      "Bash(sips -s format webp -Z 1200 \"public/ministers/Jhonas Serra-brazil.png\" --out \"public/ministers/jhonas-serra-brazil.webp\")",
+      "Bash(awk '{print \"webp:\", $5}')",
+      "Bash(open -R .env)",
+      "mcp__a0893bb1-403b-4237-b450-09d1b25a5c17__get_metadata",
+      "WebFetch(domain:howjglobal.org)",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('src/content/site.json'\\)\\); print\\(json.dumps\\(d.get\\('about'\\), indent=2\\)\\); print\\('--- brand ---'\\); print\\(json.dumps\\(d.get\\('brand'\\), indent=2\\)\\)\")",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('src/content/site.json'\\)\\); print\\(json.dumps\\(d.get\\('about'\\), indent=1\\)\\); print\\('---brand---'\\); print\\(json.dumps\\(d.get\\('brand'\\), indent=1\\)\\)\")",
+      "Bash(curl -sL -o public/about/about-video.jpg \"https://img.youtube.com/vi/mcVmJSB05GA/maxresdefault.jpg\")",
+      "Bash(awk '{print $5}')",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('src/content/site.json'\\)\\); print\\(json.dumps\\(d.get\\('nav'\\), indent=1\\)\\)\")",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('src/content/site.json'\\)\\); print\\(json.dumps\\(d.get\\('destinations'\\), indent=1\\)\\)\")",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('src/content/expressions.json'\\)\\); print\\(d['brazil']['country'], '|', d['ghana']['country']\\)\")"
     ]
   }
 }

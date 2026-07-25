@@ -5,32 +5,219 @@
     "tagline": "Placeholder tagline — pull real copy from Canva/Figma design."
   },
   "nav": [
-    { "label": "Home", "path": "/" },
-    { "label": "About", "path": "/about" },
-    { "label": "Destinations", "path": "/destinations" },
-    { "label": "Gallery", "path": "/gallery" },
-    { "label": "Register", "path": "/register" },
-    { "label": "Contact", "path": "/contact" }
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "Expressions",
+      "path": "/expressions"
+    },
+    {
+      "label": "About",
+      "path": "/about"
+    },
+    {
+      "label": "Gallery",
+      "path": "/gallery"
+    },
+    {
+      "label": "Contact",
+      "path": "/contact"
+    },
+    {
+      "label": "Register",
+      "path": "/register"
+    }
   ],
   "hero": {
     "heading": "Placeholder headline for the hero section",
     "subheading": "Placeholder supporting line — replace with real messaging.",
-    "cta": { "label": "Register interest", "path": "/register" }
+    "cta": {
+      "label": "Register interest",
+      "path": "/register"
+    }
   },
   "about": {
     "heading": "About HOWJ",
-    "body": "Placeholder about copy. Replace with the real brand story from the Canva/Figma design."
-  },
-  "destinations": {
-    "heading": "Where we go",
-    "items": [
-      { "name": "Placeholder destination 1", "description": "Placeholder description." },
-      { "name": "Placeholder destination 2", "description": "Placeholder description." },
-      { "name": "Placeholder destination 3", "description": "Placeholder description." }
-    ]
+    "body": "Hangout with Jesus is more than an event — it's a divine mandate to bring people together across nations to experience the love, power, and presence of Jesus Christ.",
+    "hero": {
+      "eyebrow": "About us",
+      "title": "Hang Out With Jesus",
+      "body": "Hangout with Jesus (HOWJ) is more than an event; it's a divine mandate inspired by the words of Matthew 28:19 — “Go ye therefore, and teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost.” Our mission is to bring people together across nations to experience the love, power, and presence of Jesus Christ.",
+      "ctaLabel": "Watch video",
+      "videoUrl": "https://www.youtube.com/watch?v=mcVmJSB05GA",
+      "videoImage": "/about/about-video.jpg"
+    },
+    "stats": [
+      {
+        "value": "1500+",
+        "label": "People assembled to experience Jesus"
+      },
+      {
+        "value": "450k",
+        "label": "Souls documented for Christ in person"
+      },
+      {
+        "value": "13+",
+        "label": "Missions completed so far"
+      }
+    ],
+    "story": {
+      "eyebrow": "Our story",
+      "headline": "Together, we're taking the love, power and presence of Jesus to the nations.",
+      "notes": [
+        "HOWJ began in 2021 with a single gathering in London — one goal: bring people together to experience Jesus.",
+        "What started as one revival has become a movement — ten expressions across four continents, each one revealing Jesus by a new name.",
+        "Along the way thousands have assembled, souls have been documented for Christ, and communities have been served through charity outreach."
+      ],
+      "timeline": [
+        {
+          "year": "2021",
+          "city": "London",
+          "title": "Jesus Christ — The Way, The Truth, The Life",
+          "text": "HOWJ 1.0. Three days in London launch the mandate (John 14:6).",
+          "image": "/gallery/london-ministration-01.jpg"
+        },
+        {
+          "year": "2021",
+          "city": "Dubai",
+          "title": "Jesus Christ — The Answer",
+          "text": "HOWJ 2.0 closes the year in Dubai (Romans 7:25).",
+          "image": "/gallery/IMG_7373.jpg"
+        },
+        {
+          "year": "2022",
+          "city": "Chicago",
+          "title": "Jesus Christ — The Light of the World",
+          "text": "HOWJ 3.0 crosses the Atlantic to Chicago (John 8:12).",
+          "image": "/gallery/IMG_7422.jpg"
+        },
+        {
+          "year": "2022",
+          "city": "Lagos",
+          "title": "Jesus Christ — The Governor Among the Nations",
+          "text": "HOWJ 4.0 lands on African soil in Lagos (Psalm 22:28).",
+          "image": "/gallery/london-ministration-05.jpg"
+        },
+        {
+          "year": "2023",
+          "city": "Kenya",
+          "title": "Jesus Christ — The Same Yesterday, Today and Forever",
+          "text": "HOWJ 5.0 reaches Kenya (Hebrews 13:8).",
+          "image": "/gallery/kenya-arrival-02.jpg"
+        },
+        {
+          "year": "2023",
+          "city": "Ghana",
+          "title": "Jesus Christ — The Lion of the Tribe of Judah",
+          "text": "HOWJ 6.0 in Ghana pairs revival with charity outreach (Revelation 5:5).",
+          "image": "/gallery/ghana-charity-01.jpg"
+        },
+        {
+          "year": "2024",
+          "city": "South Korea",
+          "title": "Jesus Christ — The Lord is That Spirit",
+          "text": "HOWJ 7.0 goes to Asia — South Korea (2 Corinthians 3:17).",
+          "image": "/gallery/korea-outreach-01.jpg"
+        },
+        {
+          "year": "2024",
+          "city": "New York",
+          "title": "Jesus Christ — The Amen",
+          "text": "HOWJ 8.0 gathers New York (Revelation 3:14).",
+          "image": "/gallery/newyork-ministration-01.jpg"
+        },
+        {
+          "year": "2025",
+          "city": "Brazil",
+          "title": "Jesus Christ — The Redeemer",
+          "text": "HOWJ 9.0. Three days in Brazil (Galatians 3:13-14).",
+          "image": "/gallery/brazil-ministration-02.jpg"
+        },
+        {
+          "year": "2025",
+          "city": "Atlanta",
+          "title": "Jesus Christ — Name Above All Names",
+          "text": "HOWJ 10.0 in Atlanta (Philippians 2:9-11). Next stop: Jamaica.",
+          "image": "/gallery/atlanta-ministration-01.jpg"
+        }
+      ]
+    },
+    "people": {
+      "heading": "Our people make HOWJ",
+      "body": "The HOWJ team come from different nations and walks of life — volunteers, ministers and organisers driven by one shared vision: to make Jesus known.",
+      "members": [
+        {
+          "name": "Dammy Paul Olu-Ayeni",
+          "role": "HOWJ Global Team"
+        },
+        {
+          "name": "Ope Olu-Ayeni",
+          "role": "HOWJ Global Team"
+        },
+        {
+          "name": "JJ Nubi",
+          "role": "HOWJ Global Team"
+        },
+        {
+          "name": "Victoria Odensanmi",
+          "role": "HOWJ Global Team"
+        },
+        {
+          "name": "Joan",
+          "role": "HOWJ Global Team"
+        }
+      ]
+    },
+    "values": {
+      "eyebrow": "The heart behind HOWJ",
+      "heading": "How we make sure we always make an impact",
+      "poster": {
+        "line1": "JESUS",
+        "line2": "FIRST"
+      },
+      "posterImage": "/gallery/ghana-charity-05.jpg",
+      "items": [
+        {
+          "title": "Gather the nations",
+          "body": "We bring people together across nations to experience the love, power, and presence of Jesus Christ."
+        },
+        {
+          "title": "Serve the poor & forgotten",
+          "body": "Charity welfare outreaches serve the poor and forgotten wherever an expression lands."
+        },
+        {
+          "title": "Be the hands and feet of Jesus",
+          "body": "Alongside our revival events we are committed to meeting the physical, emotional, and spiritual needs of those around us."
+        },
+        {
+          "title": "Document transformation",
+          "body": "Souls are documented for Christ in person — stories of faith and transformation follow every expression."
+        },
+        {
+          "title": "Go again",
+          "body": "From London to Lagos, New York to Nairobi — each expression brings men closer to Jesus. Then we go again."
+        }
+      ]
+    },
+    "inspired": {
+      "heading": "Feeling inspired?",
+      "body": "If you feel led to be part of the next expression, join us in Jamaica.",
+      "ctaLabel": "Register",
+      "images": [
+        "/gallery/london-ministration-02.jpg",
+        "/gallery/ghana-charity-02.jpg",
+        "/gallery/atlanta-ministration-03.jpg",
+        "/gallery/kenya-arrival-03.jpg"
+      ]
+    }
   },
   "footer": {
     "email": "hello@howj.example",
     "social": []
+  },
+  "expressions": {
+    "heading": "Expressions"
   }
 }

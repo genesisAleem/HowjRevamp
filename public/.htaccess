@@ -1,0 +1,54 @@
+# Hostinger (Apache) config for the built SPA.
+# Vite copies everything in public/ into dist/, so this ships with the build —
+# upload the CONTENTS of dist/ into public_html/ and this lands beside index.html.
+
+# ---------------------------------------------------------------------------
+# SPA fallback — REQUIRED.
+# React Router owns /about, /expression/brazil, etc. Those paths don't exist as
+# files on disk, so without this Apache 404s on any deep link or page refresh.
+# ---------------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Never rewrite real files or directories (assets, images, favicon…)
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Everything else hands off to the app
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# ---------------------------------------------------------------------------
+# Compression
+# ---------------------------------------------------------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/javascript
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# ---------------------------------------------------------------------------
+# Caching. Vite fingerprints asset filenames (index-a1b2c3.js), so they can be
+# cached hard — but index.html must always revalidate or users get a stale app
+# pointing at deleted asset hashes after a redeploy.
+# ---------------------------------------------------------------------------
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 6 months"
+  ExpiresByType image/png "access plus 6 months"
+  ExpiresByType image/webp "access plus 6 months"
+  ExpiresByType image/avif "access plus 6 months"
+  ExpiresByType image/svg+xml "access plus 6 months"
+  ExpiresByType video/mp4 "access plus 6 months"
+  ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+</IfModule>

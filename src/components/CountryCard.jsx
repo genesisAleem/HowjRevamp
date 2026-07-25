@@ -1,4 +1,4 @@
-import CircleFlag, { FLAG_ACCENTS } from './CircleFlag.jsx'
+import CircleFlag, { FLAG_ACCENTS, normalizeCountry } from './CircleFlag.jsx'
 
 // Pick black or white text for a given background so the stub stays legible
 // whatever flag colour it's sampled from (e.g. saffron → black, navy → white).
@@ -60,7 +60,7 @@ export default function CountryCard({
 }) {
   // Stub colour: explicit `accent` prop, else the country's flag accent, else the
   // brand green. Text/plane and the dashed perforation adapt to stay legible.
-  const bg = accent ?? FLAG_ACCENTS[country?.toLowerCase()] ?? '#0e6537'
+  const bg = accent ?? FLAG_ACCENTS[normalizeCountry(country)] ?? '#0e6537'
   const fg = readableText(bg)
   const border = fg === '#ffffff' ? 'rgba(255,255,255,0.5)' : 'rgba(0,0,0,0.35)'
   const s = compact ? SIZES.compact : SIZES.default
@@ -84,7 +84,7 @@ export default function CountryCard({
           {church && <p className={`${s.church} leading-snug`}>{church}</p>}
           {/* leading-[1] not leading-none: --spacing-none shadows it to line-height 0 */}
           <p className={`${s.title} leading-[1]`}>{city}</p>
-          <p className={`${s.title} leading-[1]`}>{code}</p>
+          {code && <p className={`${s.title} leading-[1]`}>{code}</p>}
         </div>
         <AirplaneTopIcon className={`${s.plane} shrink-0`} />
       </div>
