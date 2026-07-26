@@ -22,8 +22,8 @@
       "path": "/gallery"
     },
     {
-      "label": "Contact",
-      "path": "/contact"
+      "label": "Give",
+      "path": "/give"
     },
     {
       "label": "Register",
@@ -220,5 +220,63 @@
   "expressions": {
     "heading": "Expressions",
     "subheading": "Over 4 years of Jesus impact. Here is our journey so far."
+  },
+  "give": {
+    "hero": {
+      "eyebrow": "Give",
+      "title": "Partner in the mandate",
+      "body": "“For we are co-workers in God’s service; you are God’s field, God’s building.” — 1 Corinthians 3:9. Your giving fuels every expression, every outreach, every soul reached.",
+      "image": "/gallery/atlanta-ministration-01.jpg"
+    },
+    "waysToGive": {
+      "heading": "Ways to give",
+      "body": "Every gift goes directly toward revival events and charity outreach across our expressions.",
+      "methods": [
+        {
+          "name": "PayPal Giving",
+          "handle": "",
+          "image": "/gallery/newyork-ministration-01.jpg"
+        },
+        {
+          "name": "Zelle",
+          "handle": "",
+          "image": "/gallery/kenya-arrival-02.jpg"
+        },
+        {
+          "name": "Cash App",
+          "handle": "",
+          "image": "/gallery/India-charity-02.jpg"
+        }
+      ]
+    },
+    "waysToPartner": {
+      "eyebrow": "Ways to partner",
+      "verse": "“Two are better than one, because they have a good return for their labor.” — Ecclesiastes 4:9-12",
+      "body": "Partner with us in spreading the message of Jesus worldwide — through prayer, sharing, and support.",
+      "items": [
+        {
+          "name": "Pray",
+          "verse": "“Finally, brethren, pray for us, that the word of the Lord may have free course, and be glorified.”",
+          "body": "Join our prayer community and stand with every expression before it launches.",
+          "image": "/gallery/atlanta-ministration-05.jpg"
+        },
+        {
+          "name": "Post",
+          "verse": "“The Lord gave the word: great was the company of those that published it.” — Psalm 68:11",
+          "body": "Partner by posting our updates to your social circle, family, friends and sphere of influence.",
+          "image": "/gallery/korea-outreach-01.jpg"
+        },
+        {
+          "name": "Partner",
+          "verse": "“Two are better than one, because they have a good return for their labor.” — Ecclesiastes 4:9-12",
+          "body": "Partner with us to serve the body of Christ on the ground, wherever HOWJ goes next.",
+          "image": "/gallery/newyork-outreach-02.jpg"
+        }
+      ]
+    },
+    "contact": {
+      "heading": "Reach out to us",
+      "body": "Have any questions or inquiries?"
+    }
   }
 }

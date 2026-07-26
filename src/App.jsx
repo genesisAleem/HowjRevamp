@@ -8,6 +8,7 @@ import Expression from './pages/Expression.jsx'
 import Gallery from './pages/Gallery.jsx'
 import Register from './pages/Register.jsx'
 import Contact from './pages/Contact.jsx'
+import Give from './pages/Give.jsx'
 import NotFound from './pages/NotFound.jsx'
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/register" element={<Register />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/give" element={<Give />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
