@@ -1,4 +1,5 @@
 import CircleFlag, { FLAG_ACCENTS, normalizeCountry } from './CircleFlag.jsx'
+import PlaneIcon from './PlaneIcon.jsx'
 
 // Pick black or white text for a given background so the stub stays legible
 // whatever flag colour it's sampled from (e.g. saffron → black, navy → white).
@@ -8,16 +9,6 @@ function readableText(hex) {
   const lin = (v) => (v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4)
   const L = 0.2126 * lin(r) + 0.7152 * lin(g) + 0.0722 * lin(b)
   return L > 0.4 ? '#0b0b0b' : '#ffffff'
-}
-
-// Top-view airliner (nose right), rebuilt clean — the Figma airplane was ~90
-// stacked vectors. Tints via currentColor.
-function AirplaneTopIcon({ className = '' }) {
-  return (
-    <svg viewBox="0 0 512 512" fill="currentColor" aria-hidden="true" className={className}>
-      <path d="M480 256c0 13.8-12.5 25-28 25l-132.7 0-83.6 128.5c-2.9 4.5-7.9 7.2-13.2 7.2l-37.3 0c-7.6 0-13.1-7.3-11-14.6L163 281 94.2 281l-37.4 44.9c-2.7 3.2-6.7 5.1-10.9 5.1l-23.6 0c-5.6 0-9.7-5.3-8.3-10.7L36.9 256 13.5 182.7c-1.4-5.4 2.7-10.7 8.3-10.7l23.6 0c4.2 0 8.2 1.9 10.9 5.1L93.7 231l68.8 0L124.9 116.9c-2.1-7.3 3.4-14.6 11-14.6l37.3 0c5.3 0 10.3 2.7 13.2 7.2L269.3 231 452 231c15.5 0 28 11.2 28 25z" />
-    </svg>
-  )
 }
 
 // Figma: Country card (node 132:3329). Feature image with a circular country
@@ -56,6 +47,10 @@ export default function CountryCard({
   flag,
   accent,
   compact = false,
+  // `fluid` drops the max-width so the card fills its grid column. Don't try to
+  // override with `max-w-none` — the custom --spacing-none token shadows it and
+  // it resolves to max-width:0 (see the Tailwind v4 note in CLAUDE.md).
+  fluid = false,
   className = '',
 }) {
   // Stub colour: explicit `accent` prop, else the country's flag accent, else the
@@ -66,7 +61,11 @@ export default function CountryCard({
   const s = compact ? SIZES.compact : SIZES.default
 
   return (
-    <article className={`flex w-full ${s.card} flex-col overflow-hidden rounded-md ${className}`}>
+    // h-full + a flex-1 stub let cards in a stretch grid match heights even when
+    // the venue/city text wraps to a different number of lines.
+    <article
+      className={`flex h-full w-full flex-col overflow-hidden rounded-md ${fluid ? '' : s.card} ${className}`}
+    >
       {/* feature image + flag badge */}
       <div className="relative aspect-[372/359] w-full bg-neutral-gray-100">
         <img src={image} alt={imageAlt ?? city ?? country} className="absolute inset-0 size-full object-cover" />
@@ -77,7 +76,7 @@ export default function CountryCard({
 
       {/* detail stub — dashed perforation on top, like a boarding pass */}
       <div
-        className={`flex items-center border-t-4 border-dashed ${s.stub}`}
+        className={`flex flex-1 items-center border-t-4 border-dashed ${s.stub}`}
         style={{ backgroundColor: bg, color: fg, borderColor: border }}
       >
         <div className="flex min-w-0 flex-1 flex-col font-heading font-semibold">
@@ -86,7 +85,7 @@ export default function CountryCard({
           <p className={`${s.title} leading-[1]`}>{city}</p>
           {code && <p className={`${s.title} leading-[1]`}>{code}</p>}
         </div>
-        <AirplaneTopIcon className={`${s.plane} shrink-0`} />
+        <PlaneIcon className={`${s.plane} shrink-0`} />
       </div>
     </article>
   )

@@ -120,7 +120,7 @@
       {
         "value": "",
         "label": "In attendance",
-        "image": "/expressions/south-korea/korea.jpg"
+        "image": "/expressions/south-korea/korea-1.jpg"
       }
     ],
     "numbers": [
@@ -159,7 +159,7 @@
       "title": "Orphanage",
       "overview": "At Hang Out With Jesus (HOWJ), our mission is simple yet profound: to follow Jesus out of the four walls of the church and into the heart of the community, no matter where that community is located. Recently, the HOWJ team traveled over 6,000 miles to share the transformative love of Christ in Seoul, South Korea.",
       "images": [
-        "/expressions/south-korea/korea-1.jpg",
+        "/expressions/south-korea/korea.jpg",
         "/expressions/south-korea/kores3.jpg",
         "/expressions/south-korea/korea-busking.jpg"
       ]
@@ -172,6 +172,108 @@
       "title": "Charity Highlight",
       "images": [
         "/expressions/south-korea/kore-charity-07.jpg"
+      ]
+    }
+  },
+  "kenya": {
+    "slug": "kenya",
+    "logo": "/expressions/kenya/howj_logo-kenya.png",
+    "heroImage": "/expressions/kenya/kenya_hero.png",
+    "country": "Kenya",
+    "city": "Nakuru",
+    "venue": "",
+    "date": "2023-04-28",
+    "tags": [
+      {
+        "label": "Revival",
+        "target": "revival"
+      },
+      {
+        "label": "Documentary",
+        "target": "documentary"
+      },
+      {
+        "label": "Minister",
+        "target": "minister"
+      },
+      {
+        "label": "Charity",
+        "target": "charity"
+      },
+      {
+        "label": "Gallery",
+        "target": "gallery"
+      }
+    ],
+    "theme": "Jesus Christ - The Same Yesterday, Today and Forever",
+    "verse": "Hebrews 13:8",
+    "overview": "The power of God penetrated the streets of Nakuru, Kenya, even into the market places and thousands of lives were impacted.\n\nFrom the outreach at Kambi Turkana village to the revival night with Ministers Theophilus Sunday and Abbey Ojomu, the presence of God was heavy and palpable!  HOWJ Global brought hope and practical support to thousands of Kenyan families facing daily hardship. Our 2024 Kenya activation combined wide-scale food relief with a high-energy community event that drew participants from across the region. This chapter reinforced our belief that transformed communities begin with people who dare to show up.",
+    "featureStats": [
+      {
+        "value": "10000+",
+        "label": "Total souls impacted",
+        "image": "/expressions/kenya/kenya-featured2-1.png"
+      },
+      {
+        "value": "10000+",
+        "label": "In attendance",
+        "image": "/expressions/kenya/kenya-featured-charity3.png"
+      }
+    ],
+    "numbers": [
+      {
+        "value": "20+",
+        "label": "miracles documented"
+      },
+      {
+        "value": "10000+",
+        "label": "Impacted charity"
+      },
+      {
+        "value": "200+",
+        "label": "Souls impacted through charity"
+      }
+    ],
+    "documentary": {
+      "image": "/expressions/kenya/maxresdefault.jpg",
+      "videoUrl": "https://www.youtube.com/watch?v=kaKo1rjDji0"
+    },
+    "ministers": [
+      {
+        "name": "Paul Tomisin",
+        "image": "/expressions/kenya/paul-tomisin-nigeria.jpg"
+      },
+      {
+        "name": "Abbey Ojomu",
+        "image": "/expressions/kenya/abbey.png"
+      },
+      {
+        "name": "Theophilus Sunday",
+        "image": "/expressions/kenya/theophilus_sundayy.png"
+      }
+    ],
+    "charity": {
+      "title": "",
+      "overview": "",
+      "images": [
+        "/expressions/kenya/kenya-arrival-02.jpg",
+        "/expressions/kenya/kenya-charity.png",
+        "/expressions/kenya/kenya-featured2.png",
+        "/expressions/kenya/kenyagallery03.png"
+      ]
+    },
+    "partners": {
+      "label": "Our Partners in Kenya",
+      "logos": []
+    },
+    "charityHighlight": {
+      "title": "Charity Highlight",
+      "images": [
+        "/expressions/kenya/kenya-arrival-01.png",
+        "/expressions/kenya/kenya-featured-charity3-1.png",
+        "/expressions/kenya/kenya-ministration-05.jpg",
+        "/expressions/kenya/kenyagallery03-1.png",
+        "/expressions/kenya/kenyagallery02.png"
       ]
     }
   },
@@ -277,6 +379,119 @@
       ]
     }
   },
+  "new-york": {
+    "slug": "new-york",
+    "logo": "/expressions/new-york/newyork-logo-.png",
+    "heroImage": "/expressions/new-york/herorevival.jpg",
+    "country": "United States",
+    "city": "New York",
+    "venue": "Times Square",
+    "date": "2024-09-14",
+    "tags": [
+      {
+        "label": "Revival",
+        "target": "revival"
+      },
+      {
+        "label": "Documentary",
+        "target": "documentary"
+      },
+      {
+        "label": "Minister",
+        "target": "minister"
+      },
+      {
+        "label": "Charity",
+        "target": "charity"
+      },
+      {
+        "label": "Gallery",
+        "target": "gallery"
+      }
+    ],
+    "theme": "Jesus Christ - The Amen",
+    "verse": "Revelation 3:14",
+    "overview": "By divine instruction from The LORD, The Hang Out With JESUS New York Revival was strategically held at the very heart of Times Square and lives were transformed. JESUS CHRIST was revealed as The Amen and we saw a myriad of miracles. Hearts were healed and deliverance was seen. Our 2025 New York event drew a diverse crowd united by a single heartbeat: the belief that no one should be left behind. This activation cemented HOWJ's presence in the cultural capital of the world.",
+    "featureStats": [
+      {
+        "value": "51+",
+        "label": "Total souls impacted",
+        "image": "/expressions/new-york/herorevival-1.jpg"
+      },
+      {
+        "value": "500+",
+        "label": "In attendance",
+        "image": "/expressions/new-york/img_8188.heic"
+      }
+    ],
+    "numbers": [
+      {
+        "value": "10+",
+        "label": "miracles documented"
+      },
+      {
+        "value": "15+",
+        "label": "Impacted charity"
+      },
+      {
+        "value": "51+",
+        "label": "Souls impacted through charity"
+      }
+    ],
+    "documentary": {
+      "image": "/expressions/new-york/maxresdefault.jpg",
+      "videoUrl": "https://www.youtube.com/watch?v=PdVcv0Yx6zg&t=363s"
+    },
+    "ministers": [
+      {
+        "name": "Jumbo aniebiet",
+        "image": "/expressions/new-york/jumbo_aniebiet.jpg"
+      },
+      {
+        "name": "Victoria Orenze",
+        "image": null
+      },
+      {
+        "name": "Freke Umoh",
+        "image": "/expressions/new-york/freke_umoh.jpg"
+      },
+      {
+        "name": "kingsley okonkwo",
+        "image": "/expressions/new-york/kingsley-okonkwo.jpg"
+      },
+      {
+        "name": "Tomi Favored",
+        "image": "/expressions/new-york/tomi_favored_aleshinloye.jpg"
+      }
+    ],
+    "charity": {
+      "title": "Hoboken Shelter x City Harvest",
+      "overview": "We are committed to putting faith into action across the New York metropolitan area. Through hands-on partnership with City Harvest and the Hoboken Shelter, our volunteers served meals, met immediate community needs, and shared the love of Christ with our neighbors experiencing food insecurity and homelessness",
+      "images": [
+        "/expressions/new-york/2a1a8633-1.jpg",
+        "/expressions/new-york/2a1a8754-1-.jpg",
+        "/expressions/new-york/2a1a8757.jpg"
+      ]
+    },
+    "partners": {
+      "label": "Our Partners in United States",
+      "logos": [
+        {
+          "image": "/expressions/new-york/cityharvest.png"
+        },
+        {
+          "image": "/expressions/new-york/hoboken-homeless-shelter.png"
+        }
+      ]
+    },
+    "charityHighlight": {
+      "title": "Charity Highlight",
+      "images": [
+        "/expressions/new-york/cityharvest-featured.jpg",
+        "/expressions/new-york/2a1a8633.jpg"
+      ]
+    }
+  },
   "ghana": {
     "slug": "ghana",
     "logo": "/expressions/ghana/howj-6-ghana_logo.jpg",
@@ -314,7 +529,7 @@
       {
         "value": "500+",
         "label": "Total souls impacted",
-        "image": "/expressions/ghana/ghana_charity-05-1.jpg"
+        "image": "/expressions/ghana/ghana_charity-05.jpg"
       },
       {
         "value": "300+",
@@ -367,7 +582,7 @@
         "/expressions/ghana/ghana-charity-06-1.jpg",
         "/expressions/ghana/ghana-charity-07-1.jpg",
         "/expressions/ghana/ghana_charity--1.jpg",
-        "/expressions/ghana/ghana_charity-05.jpg",
+        "/expressions/ghana/ghana_charity-05-1.jpg",
         "/expressions/ghana/ghana_charity-08.jpg",
         "/expressions/ghana/ghana-charity-prison.jpg"
       ]
@@ -421,12 +636,12 @@
       {
         "value": "3+",
         "label": "Total souls impacted",
-        "image": "/expressions/dubai/dubai-06-1-2.jpg"
+        "image": "/expressions/dubai/dubai-06-1.jpg"
       },
       {
         "value": "20+",
         "label": "In attendance",
-        "image": "/expressions/dubai/dubai-05-1-2.jpg"
+        "image": "/expressions/dubai/dubai-05.jpg"
       }
     ],
     "numbers": [
@@ -467,8 +682,8 @@
       "title": "Charity Highlight",
       "images": [
         "/expressions/dubai/dubai-charity.jpg",
-        "/expressions/dubai/dubai-06-1.jpg",
-        "/expressions/dubai/dubai-05.jpg",
+        "/expressions/dubai/dubai-06-1-2.jpg",
+        "/expressions/dubai/dubai-05-1-2.jpg",
         "/expressions/dubai/dubai-04.jpg",
         "/expressions/dubai/dubai-03.jpg",
         "/expressions/dubai/dubai-02.jpg"

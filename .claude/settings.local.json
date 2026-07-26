@@ -79,7 +79,8 @@
       "Bash(awk '{print $5}')",
       "Bash(python3 -c \"import json; d=json.load\\(open\\('src/content/site.json'\\)\\); print\\(json.dumps\\(d.get\\('nav'\\), indent=1\\)\\)\")",
       "Bash(python3 -c \"import json; d=json.load\\(open\\('src/content/site.json'\\)\\); print\\(json.dumps\\(d.get\\('destinations'\\), indent=1\\)\\)\")",
-      "Bash(python3 -c \"import json; d=json.load\\(open\\('src/content/expressions.json'\\)\\); print\\(d['brazil']['country'], '|', d['ghana']['country']\\)\")"
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('src/content/expressions.json'\\)\\); print\\(d['brazil']['country'], '|', d['ghana']['country']\\)\")",
+      "Bash(grep -E '^\\\\S+ \\\\.env$')"
     ]
   }
 }

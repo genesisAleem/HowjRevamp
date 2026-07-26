@@ -1,6 +1,7 @@
 import { Fragment, useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
 import StatBlock from './StatBlock.jsx'
+import { PLANE_PATH, PLANE_CENTER } from './PlaneIcon.jsx'
 import photos from '../content/gallery.json'
 import logo from '../assets/brand/howj-logo-white.svg'
 
@@ -96,16 +97,14 @@ function OrbitCurves() {
         />
       ))}
       {/* plane — lands last, lower-left, angled up the curve (Figma 158:7624:
-          ~7.7% left / ~79% down, rotate -123.71°) */}
+          ~7.7% left / ~79% down, rotate -123.71°). Same brand jet as PlaneIcon;
+          scale 0.195 on the 682-wide viewBox matches the previous icon width. */}
       <g
         className="orbit-fade"
         style={{ '--d': `${PLANE_DELAY}s` }}
-        transform="translate(230 828) rotate(-123.71) scale(0.26) translate(-256 -256)"
+        transform={`translate(650 862) rotate(-33) scale(0.195) translate(${-PLANE_CENTER.x} ${-PLANE_CENTER.y})`}
       >
-        <path
-          fill="#fff"
-          d="M480 256c0 13.8-12.5 25-28 25l-132.7 0-83.6 128.5c-2.9 4.5-7.9 7.2-13.2 7.2l-37.3 0c-7.6 0-13.1-7.3-11-14.6L163 281 94.2 281l-37.4 44.9c-2.7 3.2-6.7 5.1-10.9 5.1l-23.6 0c-5.6 0-9.7-5.3-8.3-10.7L36.9 256 13.5 182.7c-1.4-5.4 2.7-10.7 8.3-10.7l23.6 0c4.2 0 8.2 1.9 10.9 5.1L93.7 231l68.8 0L124.9 116.9c-2.1-7.3 3.4-14.6 11-14.6l37.3 0c5.3 0 10.3 2.7 13.2 7.2L269.3 231 452 231c15.5 0 28 11.2 28 25z"
-        />
+        <path fill="#fff" fillRule="evenodd" d={PLANE_PATH} />
       </g>
     </svg>
   )
@@ -189,9 +188,18 @@ export default function StatsSection() {
         aria-hidden="true"
       />
 
-      {/* dotted flight-path orbit — desktop only, hidden on mobile */}
-      <div ref={orbitRef} className="orbit pointer-events-none absolute inset-0 z-10 hidden lg:block" aria-hidden="true">
-        <OrbitCurves />
+      {/* Dotted flight-path orbit — desktop only. Constrained to roughly the width
+          of the stats grid and centred (Figma 222:6621: the curve frame is ~68% of
+          the section width, centred) so the trails hug the numbers instead of
+          spreading to the viewport edges. */}
+      <div
+        ref={orbitRef}
+        className="orbit pointer-events-none absolute inset-0 z-10 hidden items-center justify-center lg:flex"
+        aria-hidden="true"
+      >
+        <div className="aspect-[1622/943] w-full max-w-[62rem]">
+          <OrbitCurves />
+        </div>
       </div>
 
       {/* Desktop (lg+): symmetric 3-row grid with the logo dead-center. */}
