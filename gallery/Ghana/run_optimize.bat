@@ -1,0 +1,6 @@
+@echo off
+echo Running ministration image optimizer...
+python "%~dp0optimize_ministrations.py"
+echo.
+echo Press any key to close...
+pause
