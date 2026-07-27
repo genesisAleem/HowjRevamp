@@ -7,22 +7,39 @@ const src = (p) => base + String(p).replace(/^\//, '')
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
-// A single "way to give" — photo card with the method name. If a real handle/
-// link hasn't been added to site.json yet, it degrades to "Reach out for
-// details" pointing at the contact form below, rather than showing nothing.
-function GiveMethodCard({ name, handle, image }) {
+// Cash App supports a universal $cashtag payment link; PayPal/Zelle handles
+// here are plain emails with no equivalent deep-link, so they stay as text.
+const cashAppUrl = (handle) => `https://cash.app/${handle}`
+
+// A single "way to give" — solid gradient card with the method name + handle
+// (accent-maroon → accent-magenta is the closest the token palette has to the
+// reference's purple treatment; no true violet token exists yet). Falls back
+// to "Reach out for details" if a handle hasn't been added to site.json.
+function GiveMethodCard({ name, handle, brand }) {
   return (
-    <div className="relative flex aspect-[4/5] w-full flex-col justify-end overflow-hidden rounded-md">
-      <img src={src(image)} alt="" className="absolute inset-0 size-full object-cover" />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-      <div className="relative flex flex-col gap-xs p-md text-neutral-white">
-        <p className="font-condensed text-3xl font-bold uppercase leading-[1]">{name}</p>
-        {handle ? (
-          <p className="text-base">{handle}</p>
-        ) : (
+    <div className="relative flex aspect-[4/5] w-full flex-col justify-between rounded-md bg-gradient-to-br from-accent-maroon-900 to-accent-magenta-700 p-md text-neutral-white">
+      <span className="self-start rounded-sm border border-neutral-white/30 px-xs py-1 font-heading text-2xs font-semibold uppercase tracking-wide opacity-80">
+        {brand}
+      </span>
+      <div className="flex flex-1 flex-col items-center justify-center gap-xs text-center">
+        <p className="font-condensed text-4xl font-bold uppercase leading-[1]">{name}</p>
+      </div>
+      <div className="text-center">
+        {!handle ? (
           <a href="#reach-out" className="text-sm underline decoration-1 underline-offset-2 opacity-90">
             Reach out for details
           </a>
+        ) : name === 'Cash App' ? (
+          <a
+            href={cashAppUrl(handle)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-lg underline decoration-1 underline-offset-2"
+          >
+            {handle}
+          </a>
+        ) : (
+          <p className="text-lg">{handle}</p>
         )}
       </div>
     </div>
@@ -180,7 +197,7 @@ export default function Give() {
         <div className="mt-xl grid gap-lg sm:grid-cols-3">
           {g.waysToGive.methods.map((m, i) => (
             <Reveal key={m.name} delay={i * 80}>
-              <GiveMethodCard {...m} />
+              <GiveMethodCard name={m.name} handle={m.handle} brand={site.brand?.name ?? 'HOWJ'} />
             </Reveal>
           ))}
         </div>

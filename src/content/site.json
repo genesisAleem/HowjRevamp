@@ -234,18 +234,15 @@
       "methods": [
         {
           "name": "PayPal Giving",
-          "handle": "",
-          "image": "/gallery/newyork-ministration-01.jpg"
+          "handle": "give@weprevail.org"
         },
         {
           "name": "Zelle",
-          "handle": "",
-          "image": "/gallery/kenya-arrival-02.jpg"
+          "handle": "give@weprevail.org"
         },
         {
           "name": "Cash App",
-          "handle": "",
-          "image": "/gallery/India-charity-02.jpg"
+          "handle": "$GiveToPBC"
         }
       ]
     },
